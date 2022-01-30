@@ -22,7 +22,7 @@ like :
 
 <img width="1914" alt="Screen Shot 2022-01-30 at 3 14 10 PM" src="https://user-images.githubusercontent.com/4965162/151721974-d408b8eb-e779-4dc2-9da8-14c6ac3a22b1.png">
 
-The results come in the form of water.
+The results come in this JSON format.
 
 ```
 {
@@ -172,19 +172,30 @@ It is cached for 30 minutes. You can see there is a default expire_in params in 
 The cache is kept in the redis store, you must have a Redis installed in your locale.
 
 
+Our module that fetchs and updates the data:
+
+https://github.com/muratatak77/foreacast/tree/main/lib/service/weatherapi
+
+
+
+
 Things you may want to cover:
 
 * Ruby version
+  - ruby 2.6.4p104 (2019-08-28 revision 67798) [x86_64-darwin18]
 
 * System dependencies
 
 * Configuration
 
 * Database creation
+ - None
 
 * Database initialization
+ - None
 
 * How to run the test suite
+ - spec 
 
 * Services (job queues, cache servers, search engines, etc.)
 
