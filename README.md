@@ -15,7 +15,6 @@ http://localhost:3000/api/forecasts?address=1775 Milmont Dr, Milpitas, 95035
 ```
 <img width="815" alt="Screen Shot 2022-01-30 at 3 12 45 PM" src="https://user-images.githubusercontent.com/4965162/151721931-7e94c688-745b-45a2-bfae-4774db0a4c35.png">
 
-
 If you try again call this url after 3-4 seconds, you can see the results. As I said I was only able to return a json.
 
 like : 
