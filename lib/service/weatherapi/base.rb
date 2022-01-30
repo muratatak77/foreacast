@@ -16,14 +16,14 @@ module Service
         fetch_data
       end
 
-      # REQUIRED_OVERRIDES = %i[
-      #   url
-      #   api_key
-      # ].freeze
+      REQUIRED_OVERRIDES = %i[
+        url
+        api_key
+      ].freeze
 
       private
 
-      # REQUIRED_OVERRIDES.each { |method| define_method(method) { raise NotImplementedError } }
+      REQUIRED_OVERRIDES.each { |method| define_method(method) { raise NotImplementedError } }
 
       attr_reader :zip_code
 

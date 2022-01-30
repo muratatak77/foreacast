@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe Service::Weatherapi::Api do
@@ -5,4 +7,3 @@ RSpec.describe Service::Weatherapi::Api do
   let(:url) { ENV.fetch('WEATHERAPI_API_MAIN_URL') }
   # it_behaves_like 'fetch json data'
 end
-
