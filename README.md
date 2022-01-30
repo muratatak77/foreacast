@@ -161,8 +161,15 @@ The results come in the form of water.
 
 If we talk a little about the structure, when we realize that there is no cache in the first place, we update the cache by running a 'Job', connecting to the relevant API and pulling the data. After the cache is updated, the data is now directly cached.
 
-It is cached for 30 minutes.
+Job class :  https://github.com/muratatak77/foreacast/blob/main/app/jobs/service_weatherapi_job.rb
 
+It is cached for 30 minutes. You can see there is a default expire_in params in the redis store. 
+
+```
+    config.cache_store = :redis_store, redish_hash, { expires_in: 30.minutes}
+```
+
+The cache is kept in the redis store, you must have a Redis installed in your locale.
 
 
 Things you may want to cover:
