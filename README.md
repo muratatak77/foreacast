@@ -188,14 +188,15 @@ Things you may want to cover:
 * Configuration
 
 * Database creation
- - None
+  - None
 
 * Database initialization
- - None
+  - None
 
 * How to run the test suite
- - spec 
-
+```  
+spec 
+```
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
