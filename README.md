@@ -16,14 +16,13 @@ http://localhost:3000/api/forecasts?address=1775 Milmont Dr, Milpitas, 95035
 <img width="815" alt="Screen Shot 2022-01-30 at 3 12 45 PM" src="https://user-images.githubusercontent.com/4965162/151721931-7e94c688-745b-45a2-bfae-4774db0a4c35.png">
 
 
-
-
 If you try again call this url after 3-4 seconds, you can see the results. As I said I was only able to return a json.
 
 like : 
 
 <img width="1914" alt="Screen Shot 2022-01-30 at 3 14 10 PM" src="https://user-images.githubusercontent.com/4965162/151721974-d408b8eb-e779-4dc2-9da8-14c6ac3a22b1.png">
 
+The results come in the form of water.
 
 ```
 {
@@ -159,6 +158,11 @@ like :
    ]
 }
 ```
+
+If we talk a little about the structure, when we realize that there is no cache in the first place, we update the cache by running a 'Job', connecting to the relevant API and pulling the data. After the cache is updated, the data is now directly cached.
+
+It is cached for 30 minutes.
+
 
 
 Things you may want to cover:
