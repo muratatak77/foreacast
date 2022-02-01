@@ -14,13 +14,9 @@ Since there is no cache at first, a 404 - warning message will appear.
 
 If you try again call this url after 3-4 seconds, you can see the results. As I said I was only able to return a json.
 
+![Screen Shot 2022-01-31 at 8 00 19 PM](https://user-images.githubusercontent.com/4965162/151910977-2f8be721-2fe9-486a-abb1-61d1d59dec52.png)
 
 
-
-![Screen Shot 2022-01-31 at 7 35 40 PM](https://user-images.githubusercontent.com/4965162/151909302-fb2e7dae-aca1-44be-8c30-63e22510a1b8.png)
-
-
-like : 
 
 
 The api results come in this JSON format.
