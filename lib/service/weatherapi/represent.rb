@@ -16,9 +16,17 @@ module Service
 
       def adjust_data
         obj = {}
+        obj[:location] = set_location
         obj[:current] = current_data
         obj[:max_min] = max_min
         obj[:hours] = extendent
+        obj
+      end
+
+      def set_location
+        obj = {}
+        obj[:name] = location['name']
+        obj[:region] = location['region']
         obj
       end
 
@@ -55,10 +63,15 @@ module Service
       def hours
         @hours ||= origin.dig('forecast', 'forecastday', 0, 'hour')
       end
+      
+      def location
+        @location ||= origin.dig('location')
+      end
 
       def current
         @current ||= origin['current']
       end
+
     end
   end
 end
