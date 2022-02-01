@@ -112,6 +112,7 @@ Rails.application.configure do
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 
+
   ENV['WEATHERAPI_API_KEY'] = "cdebe0fa73fd47458d744038223001"
   ENV['WEATHERAPI_API_MAIN_URL'] = "http://api.weatherapi.com/v1/forecast.json"
 

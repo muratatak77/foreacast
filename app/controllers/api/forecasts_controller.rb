@@ -6,7 +6,7 @@ module Api
       address = params[:address]
       check_params(address)
       zip = params[:zip]
-      zip ||= zip_code(address)
+      zip = zip_code(address) unless zip
       if CacheUtil.expire?(zip)
         ServiceWeatherapiJob.perform_later(zip)
         render json: 'Data is expired , please try again in a 5 seconds!', status: 404

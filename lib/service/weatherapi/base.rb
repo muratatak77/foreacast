@@ -47,7 +47,6 @@ module Service
       end
 
       def api_url
-        # https://api.weatherapi.com/v1/forecast.json?key=be8dc345b6b4418bae5200526222901&q=95035&aqi=no
         # https://api.weatherapi.com/v1/forecast.json?key=cdebe0fa73fd47458d744038223001&q=95035&days=1&aqi=no&alerts=no
         @api_url ||= "#{url}?key=#{api_key}&q=#{zip_code}&aqi=no&days=1&alerts=no"
       end
