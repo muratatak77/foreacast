@@ -199,7 +199,7 @@ Things you may want to cover:
 
 * How to run the test suite
 ```  
-spec 
+ - rspec 
 ```
 * Services (job queues, cache servers, search engines, etc.)
 
