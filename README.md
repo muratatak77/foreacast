@@ -18,6 +18,7 @@ If you try again call this url after 3-4 seconds, you can see the results.
 
 
 
+I got forecast json result from https://www.weatherapi.com/ using by their api services. 
 
 The api results come in this JSON format.
 
