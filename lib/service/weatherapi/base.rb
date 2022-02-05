@@ -12,6 +12,7 @@ module Service
         @zip_code = zip_code
       end
 
+      
       def start
         fetch_data
       end
@@ -31,10 +32,11 @@ module Service
         json = fetch_json
         result = represent(json).result
         CacheUtil.update(zip_code, result)
+        result
       end
 
       def fetch_json
-        Timeout.timeout(5) do # 2 seconds - operation that may cause a timeout
+        Timeout.timeout(5) do # 5 seconds - operation that may cause a timeout
           uri = URI.parse(api_url)
           http = Net::HTTP.new(uri.host)
           request = Net::HTTP::Get.new(uri.request_uri)

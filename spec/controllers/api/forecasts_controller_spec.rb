@@ -16,7 +16,7 @@ RSpec.describe Api::ForecastsController, type: :controller do
       expect do
         ServiceWeatherapiJob.perform_later(zip)
       end.to have_enqueued_job
-      expect(response).to have_http_status(404)
+      expect(response).to have_http_status(400)
     end
 
     context 'When we have data in cache' do
